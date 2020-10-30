@@ -10,6 +10,10 @@ def home(request):
     # request.session['is_login'] = True
     return render(request, "index.html", {})
 
+def login(request):
+    # request.session['is_login'] = True
+    return render(request, "login.html", {})
+
 
 class DoctorViewSet(viewsets.ModelViewSet):
     queryset = Doctor.objects.all()
