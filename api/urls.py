@@ -15,5 +15,6 @@ router.register('hospital', views.HospitalViewSet)
 urlpatterns = [
     path("", views.home , name='home'),
     path("login-signup/", views.login , name='login/signup'),
+    path("", views.home, name='home'),
     path("/api/", include(router.urls)),
 ]
